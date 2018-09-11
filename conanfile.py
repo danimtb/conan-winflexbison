@@ -27,7 +27,7 @@ class WinflexbisonConan(ConanFile):
             raise Exception("winflexbison is only supported on Windows.")
 
     def source(self):
-        tools.get("{0}/archive/{1}.zip".format(self.homepage, self.version), sha256="a5ea5b98bb8d4054961f7bc82f458b4a9ef60c5e2dedcaba23a8e4363c2e6dfc")
+        tools.get("{0}/archive/{1}.zip".format(self.homepage, self.version), sha256="b74d4f8511c8da6b2366fe5ec01d0d62b7c735ccd5f239c53b41c3661f8da720")
         extracted_dir = self.name + "-" + self.version
         os.rename(extracted_dir, self.source_subfolder)
 
